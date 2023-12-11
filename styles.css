@@ -60,6 +60,8 @@ nav .container{
 
   width: 15em;
 
+  pointer-events: auto;
+
   float: right;
   margin-right: 5%;
 
@@ -99,6 +101,7 @@ nav .container .logo .tekst{
 nav .container .logo .tekst .tekst-container .pijl{
 
   width: 40px;
+  pointer-events: auto;
   cursor: pointer;
 
 }
