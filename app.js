@@ -1,15 +1,28 @@
-var menu_bar = document.getElementById("menu-bar");
+var menu = document.getElementById("menu")
 
-var menu_links = document.getElementById("menu-links")
-var main_logo = document.getElementById("main-logo")
-var menu_bg = document.getElementById("menu-bg")
+var pijl = document.getElementById("pijl");
+var kruis = document.getElementById("kruis");
 
-function menuOnClick() {
+const inViewport = (entries, observer) => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    });
+};
 
-    menu_bar.classList.toggle("change");
-    menu_links.classList.toggle("change");
-    main_logo.classList.toggle("change-main-logo");
-    menu_bg.classList.toggle("change-bg");
+const Obs = new IntersectionObserver(inViewport);
+const obsOptions = {}; 
+
+
+function toggle_menu() {
+
+    menu.classList.toggle("open-menu");
+    pijl.classList.toggle("rotate-pijl");
+
 }
 
-menu_bar.addEventListener("click", menuOnClick);
+pijl.addEventListener("click", toggle_menu);
+kruis.addEventListener("click", toggle_menu);
+
+document.querySelectorAll('[data-inviewport]').forEach(el => {
+    Obs.observe(el, obsOptions);
+});

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root{
+
+    --main: #4E4955;
+    --secondary: #00FF00;
+    --third: #EDEDED;
+
+}
+
+* {
+
+    font-family: 'PT Serif', serif;
+
+}
+
+html, body{
+
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    background-color: var(--third);
+
+    overflow-x: hidden;
+
+}
+
+.landingspage-img{
+
+    width: 100%;
+
+}
+
+.mobiel-container{
+
+    display: none;
+
+}
+
+@media only screen and (max-width: 1345px){ 
+
+    .landingspage-img{
+
+        content: url("./img/Beelden/Slideshow_1_1.jpg");
+
+    }
+
+    .mobiel-container{
+
+        display: block;
+        margin: 17px;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .mobiel-container img{
+
+        width: 100%;
+
+    }
+
+    .mobiel-container .lijn{
+
+        width: 100%;
+        height: 5px;
+
+        margin-top: 15px;
+        background-color: var(--secondary);
+
+    }
+
+    .mobiel-container p{
+
+        color: var(--main);
+        font-size: 25px;
+
+    }
+
+    .mobiel-container a{
+
+        color: var(--main);
+        font-size: 30px;
+
+        text-decoration: none;
+
+    }
+
+    .mobiel-container span{
+
+        color: var(--main);
+        font-size: 15px;
+
+    }
+
+}
