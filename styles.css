@@ -16,6 +16,7 @@
 
   font-family: 'PT Serif', serif;
 
+
 }
 
 html, body{
@@ -396,10 +397,11 @@ header .container{
 .meer-info{
 
   color: var(--secondary);
-  background-image: url("./img/Beelden/MEER_INFO_ACHTERGROND.jpg");
+  background-image: url("./img/SVG/CIRKEL_GROEN.svg");
 
-  background-size: 100%;
+  background-size: 500px;
   background-repeat: no-repeat;
+  background-position: 117% 85px;
 
 
 }
@@ -646,6 +648,71 @@ header .container{
 }
 
 
+/* ERVARING */
+
+.ervaring{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+
+  background-image: url("./img/SVG/BRAUND-VERTICAAL.svg");
+  background-size: 145px;
+  background-repeat: no-repeat;
+  background-position: right -11.8px;
+
+  background-color: var(--secondary);
+
+}
+
+.ervaring .container{
+
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  width: 75%;
+  height: 50%;
+
+}
+
+.ervaring .tekst-container{
+
+  margin-left: 10%;
+
+}
+
+.ervaring h1{
+
+  font-size: 60px;
+  margin-bottom: 45px;
+
+}
+
+.ervaring p{
+
+  font-size: 20px;
+  width: 75%;
+
+}
+
+.ervaring .img-container img{
+
+  width: 100%;
+
+}
+
+/* .ervaring .verticaal-logo{
+
+  position: absolute;
+  width: 160px;
+
+  transform: translate(870px, -378px);
+
+} */
+
+
 /* OVERIG */
 
 .open-menu {
@@ -750,6 +817,15 @@ header .container{
 
 [data-inviewport="move-in"].is-inViewport { 
   transform: translateX(0%);
+}
+
+[data-inviewport="move-up"] { 
+  transition: 1s;
+  transform: translateY(10%);
+}
+
+[data-inviewport="move-up"].is-inViewport { 
+  transform: translateY(0%);
 }
 
 
@@ -865,14 +941,14 @@ header .container{
 
   .meer-info {
 
-    background-image: none;
+    background-position-x: 135%;
 
   }
 
   .meer-info .container {
 
-    width: 85%;
-    margin-left: 27px;
+    width: 60%;
+    margin-left: 65px;
 
   }
 
@@ -986,18 +1062,6 @@ header .container{
 }
 
 @media only screen and (max-width: 625px) {
-  
-  html, body{
-
-    width: 100%;
-    height: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    overflow-x: hidden;
-
-  }
 
   nav .container{
 
@@ -1056,10 +1120,65 @@ header .container{
 
   }
 
+  .ervaring{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: black;
+    background-color: var(--secondary);
+  
+  }
+  
+  .ervaring .container{
+  
+    padding-top: 100px;
+    padding-bottom: 75px;
+  
+    width: 75%;
+    height: 50%;
+  
+  }
+  
+  .ervaring .tekst-container{
+  
+    margin-left: 0;
+    margin-bottom: 25px;
+  
+  }
+
+  .ervaring p{
+
+    width: 100%;
+
+  }
+  
+  .ervaring .img-container{
+  
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+  }
+
+  .ervaring .img-container img{
+  
+    content: url("./img/Beelden/ERVARING_MOBIEL.jpg");
+    width: 133%;
+  
+  }
+
+  .ervaring .verticaal-logo{
+
+    display: none;
+
+  }
+
 }
 
 @media only screen and (max-width: 360px) {
-  
+
   .wat-ik-doe .bollen .bol-groen{
 
     width: 310px;
