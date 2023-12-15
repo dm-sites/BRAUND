@@ -31,6 +31,11 @@ html, body{
 
 }
   
+body{
+
+  overflow-y: hidden;
+
+}
 
 li {
   list-style: none;
@@ -703,14 +708,13 @@ header .container{
 
 }
 
-/* .ervaring .verticaal-logo{
+/* CONTACT */
 
-  position: absolute;
-  width: 160px;
+footer{
 
-  transform: translate(870px, -378px);
+  
 
-} */
+}
 
 
 /* OVERIG */
@@ -733,6 +737,8 @@ header .container{
 
   width: 100%;
   height: fit-content;
+
+  overflow-y: visible;
 
 }
 
@@ -1061,6 +1067,23 @@ header .container{
 
 }
 
+@media only screen and (max-width: 1024px){ 
+
+  .meer-info {
+
+    background-image: none;
+
+  }
+
+  .meer-info .container {
+
+    width: 75%;
+    margin-left: 75px;
+
+  }
+
+}
+
 @media only screen and (max-width: 625px) {
 
   nav .container{
@@ -1072,6 +1095,13 @@ header .container{
   nav .container .logo{
 
     height: 160px;
+
+  }
+
+  .meer-info .container {
+
+    width: 80%;
+    margin-left: 35px;
 
   }
 
