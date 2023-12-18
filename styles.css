@@ -24,18 +24,12 @@ html, body{
   margin: 0;
   padding: 0;
 
-  scroll-behavior: smooth;
   background-color: var(--main);
 
   overflow-x: hidden;
 
 }
   
-body{
-
-  overflow-y: hidden;
-
-}
 
 li {
   list-style: none;
@@ -712,7 +706,183 @@ header .container{
 
 footer{
 
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer .container{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 85px;
+  padding-bottom: 85px;
+
+  width: 85%;
+  height: 75%;
+
+}
+
+footer .tekst{
+
+  width: 45%;
+
+}
+
+footer .tekst h1{
+
+  color: var(--third);
+  font-size: 65px;
+
+  margin-bottom: 45px;
+
+}
+
+footer .tekst p{
+
+  width: 75%;
+
+  color: var(--secondary);
+  font-size: 22px;
+
+}
+
+footer .tekst .contact-manieren{
+
+  margin-top: 33px;
+
+}
+
+footer .tekst span, footer .tekst a{
+
+  color: var(--third);
+  font-size: 20px;
+
+}
+
+footer .tekst .media{
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  margin-top: 33px;
+
+}
+
+footer .tekst .media img{
+
+  width: 40px;
+  margin-right: 15px;
+
+}
+
+footer .tekst .logo{
+
+  width: 50%;
+  margin-top: 42px;
+
+}
+
+footer .contact-formulier{
+
+  width: 45%;
+
+}
+
+footer .contact-formulier .info-container .namen, footer .contact-formulier .info-container .contacten{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+footer .contact-formulier .input-container{
+
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 10px;
+
+}
+
+footer .contact-formulier label{
+
+  color: var(--secondary);
+  font-size: 18px;
+
+}
+
+footer .contact-formulier .info-container input{
+
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 22px;
+
+  margin-top: 7px;
+
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+  background-color: var(--secondary);
+
+}
+
+
+footer .contact-formulier .bericht-container textarea{
+
+  width: 96%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 22px;
+
+  margin-top: 10px;
+
+  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+
+  resize: none;
+  background-color: var(--secondary);
+
+}
+
+footer .contact-formulier #verzend{
+
+  cursor: pointer;
+
+  width: 97.5%;
+  height: 60px;
+
+  border: none;
+
+  font-size: 17px;
+  margin-top: 15px;
+
+  background-color: var(--third);
+
+}
+
+footer #confirm{
+
+  display: none;
+  text-align: center;
+
+  color: var(--secondary);
+
+  font-size: 18.5px;
+  margin-top: 25px;
 
 }
 
@@ -730,6 +900,12 @@ footer{
 
   transform: rotate(180deg) !important;
   transition: .5s;
+
+}
+
+.show-confirm{
+
+  display: block !important;
 
 }
 
@@ -853,7 +1029,7 @@ footer{
 
   .main-slide{
 
-    content: url("./img/Beelden/Slideshow_1_1_Mobiel_2.jpg");
+    content: url("./img/Beelden/Slideshow_1_1_Mobiel.jpg");
 
   }
 
@@ -1082,6 +1258,37 @@ footer{
 
   }
 
+  footer .container{
+
+    display: block;
+  
+    padding-top: 85px;
+    padding-bottom: 85px;
+  
+    width: 85%;
+    height: 75%;
+  
+  }
+
+  footer .container .tekst{
+
+    width: 100%;
+    margin-bottom: 50px;
+
+  }
+
+  footer .container .tekst p{
+  
+    width: 100%;
+
+  }
+
+  footer .container .contact-formulier{
+
+    width: 100%;
+
+  }
+
 }
 
 @media only screen and (max-width: 625px) {
@@ -1203,6 +1410,27 @@ footer{
 
     display: none;
 
+  }
+
+  footer .contact-formulier .info-container .namen, footer .contact-formulier .info-container .contacten{
+
+    display: block;
+  
+  }
+
+  footer .contact-formulier .bericht-container textarea{
+
+    width: 100%;
+  
+  }
+  
+  footer .contact-formulier #verzend{
+  
+    width: 102%;
+    height: 70px;
+
+    margin-top: 33px;
+  
   }
 
 }

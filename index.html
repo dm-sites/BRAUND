@@ -163,7 +163,7 @@
         <div class="quote-container">
 
           <img class="quote" data-inviewport="fade" src="./img/SVG/QUOTE_2.svg" alt="">
-          <img class="stijn-meer-info" src="./img/Beelden/STIJN_1.png" alt="">
+          <img class="stijn-meer-info" src="./img/Beelden/STIJN_QUOTE.png" alt="">
 
         </div>
 
@@ -330,54 +330,76 @@
 
     <footer>
 
-      <div class="tekst">
+      <div class="container">
 
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate mollitia eveniet illo eius asperiores laudantium corporis explicabo amet possimus dolorem alias sint tenetur sunt quaerat cum dolorum architecto, vel accusantium.</p>
+        <div class="tekst">
 
-        <div class="contact-manieren">
-          
-          <span>Stijn Braun / <a href="tel:06-81-39-89">06 81 39 89</a> / <a href="mailto:stijn@braund.nl">stijn@braund.nl</a></span>
-
-          <div class="media">
-          
-            <img src="./img/SVG/INSTAGRAM_GRIJS.svg" alt="">
-            <img src="./img/SVG/LINKEDIN_GRIJS.svg" alt="">
-          
+          <h1>Contact.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate mollitia eveniet illo eius asperiores laudantium corporis explicabo amet possimus dolorem alias sint tenetur sunt quaerat cum dolorum architecto, vel accusantium.</p>
+  
+          <div class="contact-manieren">
+            
+            <span>Stijn Braun / <a href="tel:06-81-39-89">06 81 39 89</a> / <a href="mailto:stijn@braund.nl">stijn@braund.nl</a></span>
+  
+            <div class="media">
+            
+              <a href="#"><img src="./img/SVG/INSTAGRAM_GRIJS.svg" alt=""></a>
+              <a href="#"><img src="./img/SVG/LINKEDIN_GRIJS.svg" alt=""></a>
+            
+            </div>
+  
+            <img src="./img/SVG/BRAUND-TEXT-GROEN.svg" alt="" class="logo">
+  
           </div>
-
-          <img src="./img/SVG/BRAUND-TEXT-GROEN.svg" alt="" class="logo">
-
+    
         </div>
-        
+  
         <div class="contact-formulier">
+  
+          <form id="contact-formulier" action="receiving.php#contact-formulier" method="POST">
 
-          <form id="contact-form" method="POST" action="./mail.php">
-            <div class="form-row form-error" style="display:none;"></div>
-            <div class="form-row">
-              <label for="contact-form-name">Name:</label>
-              <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            <div class="info-container">
+
+              <div class="align" id="inputs">
+
+                <div class="namen">
+                  <div class="input-container">
+                    <label for="naam">Je naam</label>
+                    <input id="naam" name="naam" type="text" placeholder="" required/>
+                  </div>
+                  <div class="input-container">
+                    <label for="bedrijfsnaam">Je bedrijfsnaam</label>
+                    <input id="bedrijfsnaam" name="bedrijfsnaam" type="text" placeholder="" required/>
+                  </div>
+                </div>
+  
+                <div class="contacten">
+                  <div class="input-container">
+                    <label for="email">Je e-mailadres</label>
+                    <input id="email" name="email" type="email" placeholder="" required/>
+                  </div>
+                  <div class="input-container">
+                    <label for="telefoonnummer">Je telefoonnummer</label>
+                    <input id="telefoonnummer" name="telefoonnummer" type="tel" placeholder="" required/>
+                  </div>
+                </div>
+              </div>
+              
             </div>
-            <div class="form-row">
-              <label for="contact-form-email">Email:</label>
-              <input id="contact-form-email" class="form-input" type="email" name="email" required>
+
+            <div class="bericht-container">
+              <label for="bericht">Als je wilt kun je hier in ongeveer 200 woorden aangeven welke vraag je voor ons hebt.<br>Ik ga er daarna mee aan de slag</br></label>
+              <textarea id="bericht" name="bericht" rows="5"></textarea>
             </div>
-            <div class="form-row">
-              <label for="contact-form-phone">Phone:</label>
-              <input id="contact-form-phone" class="form-input" type="tel" name="phone">
-            </div>
-            <div class="form-row">
-              <label for="contact-form-message">Message:</label>
-              <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
+
+            <input id="verzend" name="submit" type="submit" value="Verzenden" />
+            <p id="confirm">Uw mail is verzonden, wij zullen U zo snel mogelijk beantwoorden.</p>
+  
           </form>
-
+  
         </div>
 
       </div>
-
-      <div class="formulier"></div>
 
     </footer>
 
