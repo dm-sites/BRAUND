@@ -62,6 +62,13 @@ function display_confirm() {
 pijl.addEventListener("click", toggle_menu);
 kruis.addEventListener("click", toggle_menu);
 
+document.addEventListener("scroll", (event) => {
+
+    menu.classList.remove("open-menu");
+    pijl.classList.remove("rotate-pijl");
+
+});
+
 verzend.addEventListener("click", display_confirm);
 
 document.querySelectorAll('[data-inviewport]').forEach(el => {

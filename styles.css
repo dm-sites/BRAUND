@@ -330,7 +330,7 @@ header .container{
   width: 33%;
   padding: 60px;
 
-  margin-right: 175px;
+  margin-right: 312.5px;
 
   z-index: 3;
 
@@ -354,7 +354,7 @@ header .container{
   width: 15%;
 
   padding: 50px;
-  margin-left: 175px;
+
 
 }
 
@@ -375,7 +375,7 @@ header .container{
 
   position: absolute;
 
-  width: 35%;
+  width: 650px;
   transform: translate(-12%, -15%);
 
   z-index: 1;
@@ -425,6 +425,8 @@ header .container{
   font-size: 18px;
   margin-left: 7.5px;
 
+  width: 125%;
+
 }
 
 .meer-info .quote-stijn {
@@ -441,7 +443,8 @@ header .container{
   justify-content: space-evenly;
   align-items: center;
 
-  width: 85%;
+  width: 100%;
+  margin-left: 70px;
 
 }
 
@@ -633,7 +636,6 @@ header .container{
 
 .werkwijze p{
 
-
   font-size: 20px;
   margin-bottom: 40px;
 
@@ -660,7 +662,7 @@ header .container{
   background-image: url("./img/SVG/BRAUND-VERTICAAL.svg");
   background-size: 145px;
   background-repeat: no-repeat;
-  background-position: right -11.8px;
+  background-position: 1760px -11.8px;
 
   background-color: var(--secondary);
 
@@ -668,10 +670,10 @@ header .container{
 
 .ervaring .container{
 
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
-  width: 75%;
+  width: 91%;
   height: 50%;
 
 }
@@ -721,7 +723,7 @@ footer .container{
   padding-top: 85px;
   padding-bottom: 85px;
 
-  width: 85%;
+  width: 72%;
   height: 75%;
 
 }
@@ -743,16 +745,19 @@ footer .tekst h1{
 
 footer .tekst p{
 
-  width: 75%;
+  width: 80%;
+
+  margin-left: 4px;
 
   color: var(--secondary);
-  font-size: 22px;
+  font-size: 20px;
 
 }
 
 footer .tekst .contact-manieren{
 
   margin-top: 33px;
+  margin-left: 4px;
 
 }
 
@@ -770,6 +775,7 @@ footer .tekst .media{
   align-items: center;
 
   margin-top: 33px;
+  margin-left: 2px;
 
 }
 
@@ -783,7 +789,9 @@ footer .tekst .media img{
 footer .tekst .logo{
 
   width: 50%;
+
   margin-top: 42px;
+  margin-left: 5px;
 
 }
 
@@ -836,10 +844,15 @@ footer .contact-formulier .info-container input{
 
 }
 
+footer .contact-formulier .bericht-container{
+
+  width: 98%;
+
+}
 
 footer .contact-formulier .bericht-container textarea{
 
-  width: 96%;
+  width: 97.5%;
   height: 100%;
 
   border: none;
@@ -938,8 +951,8 @@ footer #confirm{
 
   background-color: var(--secondary);
 
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 
   opacity: 1;
 
@@ -1012,6 +1025,16 @@ footer #confirm{
 
 
 /* MEDIA QUERIES */
+
+@media only screen and (max-width: 1625px) {
+  
+  .meer-info .container{
+
+    margin-left: 145px;
+
+  }
+  
+}
 
 @media only screen and (max-width: 1425px){ 
 
@@ -1137,6 +1160,7 @@ footer #confirm{
   .meer-info .container p{
 
     font-size: 23px;
+    width: 100%;
 
   }
 
@@ -1157,7 +1181,7 @@ footer #confirm{
   .meer-info .stijn-meer-info{
 
     margin-top: 25px;
-    transform: translate(10%, 2%);
+
 
   }
 
@@ -1253,8 +1277,8 @@ footer #confirm{
 
   .meer-info .container {
 
-    width: 75%;
-    margin-left: 75px;
+    width: 85%;
+
 
   }
 
@@ -1308,21 +1332,22 @@ footer #confirm{
   .meer-info .container {
 
     width: 80%;
-    margin-left: 35px;
+    margin-left: 32.5px;
+
 
   }
 
   .meer-info .quote {
 
-    width: 90%;
-    margin-left: 5px;
+    width: 80%;
+
 
   }
 
   .meer-info .stijn-meer-info{
 
-    margin-top: 2px;
-    transform: translate(-25%, 2%);
+    width: 500px;
+    margin-top: 5px;
 
   }
 
@@ -1435,6 +1460,29 @@ footer #confirm{
 
 }
 
+@media only screen and (max-width: 768px) {
+  
+  .meer-info .stijn-meer-info{
+
+    width: 550px;
+    margin-top: 5px;
+
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  
+  .meer-info .stijn-meer-info{
+
+    width: 500px;
+    margin-top: 5px;
+    transform: translateX(-12.5%);
+
+  }
+
+}
+
 @media only screen and (max-width: 360px) {
 
   .wat-ik-doe .bollen .bol-groen{
@@ -1464,6 +1512,13 @@ footer #confirm{
   .wat-ik-doe .bollen p{
 
     font-size: 12px;
+
+  }
+
+  .meer-info .stijn-meer-info{
+
+    width: 550px;
+    margin-top: 5px;
 
   }
 
@@ -1502,16 +1557,52 @@ footer #confirm{
 
   }
 
+  .meer-info .quote-container{
+
+    width: 82%;
+    margin-right: 25px;
+
+  }
+
   .meer-info .quote{
 
     width: 225px;
+    
     
   }
 
   .meer-info .stijn-meer-info{
 
+    width: 525px;
     margin-top: 5px;
 
+  }
+
+  .wat-ik-doe .bollen .bol-groen{
+
+    width: 275px;
+    height: 275px;
+
+  }
+
+  .wat-ik-doe .bollen .bol-grijs{
+
+    width: 275px;
+    height: 275px;
+
+  }
+
+  .wat-ik-doe .bollen h2{
+
+    font-size: 115%;
+
+  
+  }
+  
+  .wat-ik-doe .bollen p{
+  
+    font-size: 65%;;
+  
   }
 
 }
