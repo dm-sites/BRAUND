@@ -2,9 +2,11 @@
 
 :root{
 
-  --main: #4E4955;
+  --main: #232437;
   --secondary: #00FF00;
   --third: #EDEDED;
+
+  --stijn-text: #75727E;
 
 }
 
@@ -15,7 +17,6 @@
   padding: 0;
 
   font-family: 'PT Serif', serif;
-
 
 }
 
@@ -145,12 +146,17 @@ nav .container .menu-links{
 
 }
 
+nav .container .menu-links li{
+
+  margin-bottom: 12px;
+
+}
+
 nav .container .menu-links a {
 
   color: var(--main);
-
   font-size: 26px;
-
+  font-weight: bold;
 
 }
 
@@ -173,13 +179,24 @@ nav .container .menu-links .kruis-container #kruis{
 
 /* HEADER */
 
-header .container{
+header {
 
   width: 100%;
-  height: 99.85vh;
+  height: 100%;
+
+  background-image: url("/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 
+header img{
+
+  width: 100%;
+  content: url("./img/Beelden/HEADER_BRAUND.jpg");
+
+}
 
 /* AANKONDIGING */
 
@@ -189,7 +206,7 @@ header .container{
   justify-content: center;
   align-items: center;
 
-  height: 37vh;
+  height: 400px;
 
   background-color: var(--main);
 
@@ -197,18 +214,23 @@ header .container{
 
 .disciplines-en-aankondiging .container{
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 76%;
-  height: 90%;
+  height: 100%;
+  width: 100%;
 
 }
 
 .disciplines-en-aankondiging .disciplines{
 
   font-size: 33px;
+  height: 100%;
+
+  margin-left: 270px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  float: left;
 
 }
 
@@ -221,10 +243,23 @@ header .container{
 .disciplines-en-aankondiging .aankondiging{
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   width: 375px;
+  height: 100%;
+
+  margin-right: 17.25em;
+
+  float: right;
+
+}
+
+.disciplines-en-aankondiging .aankondiging .aankondiging-container{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -236,10 +271,10 @@ header .container{
   justify-content: center;
   align-items: center;
 
-  width: 250px;
-  height: 250px;
+  width: 16em;
+  height: 16em;
 
-  background-image: url(./img/SVG/CIRKEL_GROEN.svg);
+  background-image: url("./img/SVG/CIRKEL_GROEN.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -311,26 +346,24 @@ header .container{
   width: 100%;
 
   padding-top: 70px;
-  padding-bottom: 400px;
+  padding-bottom: 1450px;
 
   z-index: 2;
 
 }
 
-.introductie .center-container{
+.introductie .tekst-container{
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 17.25em;
+  z-index: 3;
 
 }
 
 .introductie .tekst-1{
 
-  width: 33%;
-  padding: 60px;
+  width: 40%;
 
-  margin-right: 312.5px;
+  float: left;
 
   z-index: 3;
 
@@ -346,37 +379,60 @@ header .container{
 .introductie .tekst-1 p{
 
   font-size: 18px;
+  margin-left: 3.25px;
+
+}
+
+.introductie .tekst-1 h2{
+
+  margin-left: 3px;
+  margin-top: 17px;
+  margin-bottom: 5px;
 
 }
 
 .introductie .tekst-2{
 
-  width: 15%;
+  width: 325px;
 
-  padding: 50px;
+  float: right;
 
+  margin-top: 50px;
+  margin-right: 19em;
+
+  z-index: 3;
 
 }
 
-.introductie .tekst-2 h2{
+.introductie .tekst-2 span{
 
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 21px;
 
 }
 
 .introductie .tekst-2 p{
 
-  font-size: 16.5px;
+  margin-top: 25px;
+  font-size: 14.5px;
+
+}
+
+.introductie .logo-quote{
+
+  width: 100%;
+
+  margin-top: 50px;
+
+  float: left;
 
 }
 
 .introductie .logo-half{
 
-  position: absolute;
-
   width: 650px;
-  transform: translate(-12%, -15%);
+  transform: translateX(-12.05%);
+
+  float: left;
 
   z-index: 1;
 
@@ -384,9 +440,8 @@ header .container{
 
 .introductie .quote{
 
-  width: 525px;
-
-  transform: translate(125%, 50%);
+  width: 600px;
+  margin-top: 250px;
 
 }
 
@@ -402,28 +457,36 @@ header .container{
   background-repeat: no-repeat;
   background-position: 117% 85px;
 
-
 }
 
 .meer-info .container{
 
   width: 35%;
-  padding-top: 100px;
-  margin-left: 235px;
+  padding-top: 150px;
+  margin-left: 17.25em;
 
 }
 
 .meer-info .container h1{
 
-  font-size: 55px;
+  font-size: 50px;
   margin-bottom: 60px;
+
+}
+
+.meer-info .container h2{
+
+  margin-top: 27px;
+  margin-bottom: 5px;
 
 }
 
 .meer-info .container p{
 
   font-size: 18px;
-  margin-left: 7.5px;
+
+
+  color: var(--third);
 
   width: 125%;
 
@@ -435,16 +498,13 @@ header .container{
   justify-content: center;
   align-items: center;
 
+  margin-left: 17.25em;
+
 }
 
 .meer-info .quote-stijn .quote-container{
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
   width: 100%;
-  margin-left: 70px;
 
 }
 
@@ -452,23 +512,71 @@ header .container{
 
   width: 550px;
 
+  margin-top: 150px;
+
+  float: left;
+
 }
 
 .meer-info .stijn-meer-info{
 
   opacity: .6;
-  width: 750px;
+  width: 50%;
+
+  margin-right: 100px;
+  transform: translateY(2%);
+
+  float: right;
 
 }
 
+/* DOEL */
 
-/* PROJECTEN 1 */
+.doel{
 
-.projecten-1 .container{
+  color: var(--third);
+  background-color: var(--main);
+
+}
+
+.doel .container{
 
   width: 100%;
-  height: 99.85vh;
-  
+
+  padding-top: 100px;
+  padding-bottom: 101px;
+
+}
+
+.doel .tekst-container{
+
+  margin-left: 17.25em;
+
+}
+
+.doel h1{
+
+  font-size: 50px;
+  margin-bottom: 45px;
+
+  margin-left: 3px;
+
+}
+
+.doel p{
+
+  font-size: 18px;
+  width: 75%;
+
+  margin-left: 3px;
+
+}
+
+.doel img{
+
+  width: 400px;
+  margin-top: 50px;
+
 }
 
 
@@ -476,11 +584,7 @@ header .container{
 
 .wat-ik-doe {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("./img/SVG/BRAUND-TEXT-GRIJS.svg");
+  background-image: url("./img/SVG/BRAUND-TEXT-BLAUW.svg");
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
@@ -494,17 +598,14 @@ header .container{
   padding-top: 100px;
   padding-bottom: 235px;
 
-  width: 75%;
-  height: 80%;
-
 }
 
 .wat-ik-doe h1{
 
-  font-size: 55px;
-  margin-left: 150px;
-
+  font-size: 50px;
   color: var(--main);
+
+  margin-left: 5.8em;
 
 }
 
@@ -560,12 +661,12 @@ header .container{
 
   margin: 20px;
 
-  background-image: url("./img/SVG/CIRKEL_GRIJS.svg");
+  background-image: url("./img/SVG/CIRKEL_BLAUW.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 
-  color: var(--secondary);
+  color: var(--third);
 
 }
 
@@ -578,12 +679,12 @@ header .container{
 
 .wat-ik-doe .bollen p{
 
-  font-size: 100%;;
+  font-size: 100%;
 
 }
 
 
-/* WERKWIJZE */
+/* WERKWIJZE (LEF) */
 
 .werkwijze {
 
@@ -595,13 +696,36 @@ header .container{
 
 .werkwijze .container{
 
-  width: 75%;
-  height: 80%;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 100%;
+  
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   color: var(--third);
+
+}
+
+.werkwijze .tekst-container{
+
+  margin-left: 18em;
+
+}
+
+.werkwijze .tekst-container .tekst-1{
+
+  width: 35%;
+  float: left;
+
+}
+
+.werkwijze .tekst-container .tekst-2{
+
+  width: 35%;
+
+  margin-top: 112px;
+  margin-right: 16em;
+
+  float: right;
 
 }
 
@@ -612,33 +736,12 @@ header .container{
 
 }
 
-.werkwijze .tekst-container{
-
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-
-}
-
-.werkwijze .tekst-container .tekst-1{
-
-  width: 50%;
-  margin-right: 25px;
-
-}
-
-.werkwijze .tekst-container .tekst-2{
-
-  width: 33%;
-  margin-left: 25px;
-
-}
-
 .werkwijze p{
 
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 18px;
 
+  margin-left: 5px;
+  margin-bottom: 40px;
 
 }
 
@@ -653,16 +756,12 @@ header .container{
 
 .ervaring{
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: black;
+  color: var(--main);
 
   background-image: url("./img/SVG/BRAUND-VERTICAAL.svg");
   background-size: 145px;
   background-repeat: no-repeat;
-  background-position: 1760px -11.8px;
+  background-position: 100.375% -11.8px;
 
   background-color: var(--secondary);
 
@@ -670,43 +769,39 @@ header .container{
 
 .ervaring .container{
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 100%;
 
-  width: 91%;
-  height: 50%;
+  padding-top: 200px;
+  padding-bottom: 195px;
 
 }
 
 .ervaring .tekst-container{
 
-  margin-left: 10%;
+  margin-left: 19em;
 
 }
 
 .ervaring h1{
 
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 45px;
 
 }
 
 .ervaring p{
 
-  font-size: 20px;
+  font-size: 18px;
   width: 75%;
 
-}
-
-.ervaring .img-container img{
-
-  width: 100%;
+  margin-left: 3px;
+  margin-bottom: 20px;
 
 }
 
 /* CONTACT */
 
-footer{
+footer {
 
   display: flex;
   justify-content: center;
@@ -716,30 +811,30 @@ footer{
 
 footer .container{
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   padding-top: 85px;
   padding-bottom: 85px;
 
-  width: 72%;
-  height: 75%;
+  width: 100%;
 
 }
 
 footer .tekst{
 
-  width: 45%;
+  width: 33%;
+
+  margin-left: 19.5em;
+
+  float: left;
 
 }
 
 footer .tekst h1{
 
   color: var(--third);
-  font-size: 65px;
+  font-size: 50px;
 
   margin-bottom: 45px;
+  margin-left: 3px;
 
 }
 
@@ -786,6 +881,12 @@ footer .tekst .media img{
 
 }
 
+footer .tekst .media img:hover{
+
+  transform: scale(105%);
+
+}
+
 footer .tekst .logo{
 
   width: 50%;
@@ -797,7 +898,11 @@ footer .tekst .logo{
 
 footer .contact-formulier{
 
-  width: 45%;
+  width: 30%;
+
+  margin-right: 19em;
+
+  float: right;
 
 }
 
@@ -808,7 +913,6 @@ footer .contact-formulier .info-container .namen, footer .contact-formulier .inf
   align-items: center;
 
 }
-
 
 footer .contact-formulier .input-container{
 
@@ -840,19 +944,20 @@ footer .contact-formulier .info-container input{
   padding-left: 10px;
   padding-top: 10px;
 
+  color: var(--main);
   background-color: var(--secondary);
 
 }
 
 footer .contact-formulier .bericht-container{
 
-  width: 98%;
+  width: 96%;
 
 }
 
 footer .contact-formulier .bericht-container textarea{
 
-  width: 97.5%;
+  width: 99%;
   height: 100%;
 
   border: none;
@@ -867,6 +972,8 @@ footer .contact-formulier .bericht-container textarea{
   padding-left: 10px;
 
   resize: none;
+
+  color: var(--main);
   background-color: var(--secondary);
 
 }
@@ -875,7 +982,7 @@ footer .contact-formulier #verzend{
 
   cursor: pointer;
 
-  width: 97.5%;
+  width: 96.5%;
   height: 60px;
 
   border: none;
@@ -884,6 +991,15 @@ footer .contact-formulier #verzend{
   margin-top: 15px;
 
   background-color: var(--third);
+
+  transition: .25s;
+
+}
+
+footer .contact-formulier #verzend:hover{
+
+  background-color: #dfdede;
+  transition: .25s;
 
 }
 
@@ -934,9 +1050,6 @@ footer #confirm{
 .swiper-slide img{
 
   width: 100%;
-  height: 100vh;
-
-  object-fit: cover;
   user-select: none;
 
 }
@@ -1016,7 +1129,7 @@ footer #confirm{
 
 [data-inviewport="move-up"] { 
   transition: 1s;
-  transform: translateY(10%);
+  transform: translateY(20%);
 }
 
 [data-inviewport="move-up"].is-inViewport { 
@@ -1028,15 +1141,324 @@ footer #confirm{
 
 @media only screen and (max-width: 1625px) {
   
-  .meer-info .container{
+  .introductie .logo-half{
 
-    margin-left: 145px;
+    width: 30%;
 
   }
-  
+
+  .introductie .quote{
+
+    width: 35%;
+    margin-top: 150px;
+
+  }
+
 }
 
-@media only screen and (max-width: 1425px){ 
+@media only screen and (max-width: 1688px) {
+
+  .disciplines-en-aankondiging{
+
+    display: block;
+    height: 510px;
+  
+  }
+  .disciplines-en-aankondiging .container{
+
+    width: auto;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    margin-left: .75em;
+
+  }
+
+  .disciplines-en-aankondiging .disciplines{
+
+    height: auto;
+    width: 100%;
+
+    margin-bottom: 33px;
+    margin-left: 0;
+
+    float: none;
+
+  }
+
+
+  .disciplines-en-aankondiging .disciplines-container{
+
+    width: 100%;
+    margin-left: .75em;
+
+  }
+
+  .disciplines-en-aankondiging .aankondiging{
+
+    height: auto;
+
+    margin-right: 0;
+    float: none;
+
+  }
+
+  .disciplines-en-aankondiging .aankondiging .media-links{
+
+    margin-left: 33px;
+
+  }
+
+  .introductie .position-container{
+
+    padding-bottom: 45%;
+
+  }
+
+  .introductie .position-container .tekst-container{
+
+    margin-left: 2.75em;
+
+  }
+
+  .introductie .tekst-1{
+
+    width: 80%;
+    margin-left: 0;
+
+    float: none;
+
+  }
+
+  .introductie .tekst-2{
+
+    width: 80%;
+
+    margin-right: 0;
+    margin-top: 55px;
+
+    margin-left: 5px;
+
+    float: none;
+
+    z-index: 3;
+
+  }
+
+
+  .meer-info .container {
+
+    margin-left: 2.75em;
+
+  }
+
+  .meer-info .quote-stijn{
+
+    margin-left: 3em;
+
+  }
+
+  .meer-info .quote-stijn .quote-container{
+
+    display: block;
+
+  }
+
+  .meer-info .quote {
+
+    margin-bottom: 150px;
+    float: none;
+
+  }
+
+  .meer-info .stijn-meer-info{
+
+    margin-top: 25px;
+    float: none;
+
+  }
+
+  .doel .tekst-container{
+
+    margin-left: 2.75em;
+
+  }
+
+  .doel p{
+
+    width: 77%;
+
+  }
+
+  .wat-ik-doe h1{
+
+    margin-left: 0;
+    text-align: center;
+
+  }
+
+  .werkwijze .container{
+
+    padding-top: 0;
+
+  }
+
+  .werkwijze .tekst-container{
+
+    display: block;
+
+    margin-left: 2.5em;
+    float: none;
+  
+  }
+
+  .werkwijze .tekst-container .tekst-1{
+
+    width: 100%;
+
+  }
+
+  .werkwijze .tekst-container .tekst-2{
+
+    width: 100%;
+    margin-right: 0;
+
+    float: none;
+
+  }
+
+  .werkwijze p{
+
+    width: 75%;
+
+  }
+
+  .ervaring{
+
+    background-position: 101% -11.8px;
+
+  }
+
+  .ervaring .tekst-container{
+
+    margin-left: 2.75em;
+
+  }
+
+  .ervaring .container p{
+
+    width: 77%;
+
+  }
+
+  footer .container{
+
+    display: block;
+  
+    padding-top: 85px;
+    padding-bottom: 85px;
+  
+    margin-left: 2.75em;
+  
+  }
+
+  footer .container .tekst{
+
+    width: 100%;
+    margin-bottom: 50px;
+
+    margin-left: 0;
+    float: none;
+
+  }
+
+  footer .container .tekst p{
+  
+    width: 70%;
+
+  }
+
+  footer .container .contact-formulier{
+
+    width: 85%;
+
+    margin-right: 0;
+    margin-left: 10px;
+    float: none;
+
+  }
+
+  footer .contact-formulier .info-container label{
+
+    width: 25%;
+    
+  }
+
+  footer .contact-formulier .info-container input{
+
+    width: 100%;
+
+  }
+
+  footer .contact-formulier .bericht-container{
+
+    width: 97%;
+  
+  }
+
+  footer .contact-formulier .info-container .namen, footer .contact-formulier .info-container .contacten{
+
+    display: block;
+  
+  }
+
+  footer .contact-formulier .bericht-container textarea{
+
+    width: 103%;
+  
+  }
+  
+  footer .contact-formulier #verzend{
+  
+    width: 101%;
+    height: 70px;
+
+    margin-top: 33px;
+  
+  }
+
+}
+
+@media only screen and (max-width: 1359px) {
+  
+  .meer-info .quote{
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+  }
+
+  .meer-info .stijn-meer-info{
+
+    width: 85%;
+    margin-top: 0;
+
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .ervaring{
+
+    background-position: 101.5% -11.8px;
+
+  }
+
+}
+
+@media only screen and (max-width: 1024px){ 
 
   nav .container{
 
@@ -1050,13 +1472,130 @@ footer #confirm{
 
   }
 
-  .main-slide{
+  header img{
 
-    content: url("./img/Beelden/Slideshow_1_1_Mobiel.jpg");
+    content: url("./img/Beelden/HEADER_BRAUND_MOBIEL.jpg");
 
   }
 
-  .disciplines-en-aankondiging{
+  .disciplines-en-aankondiging .container{
+
+    margin-left: .25em;
+
+  }
+
+  .introductie .position-container{
+
+    width: 100%;
+  
+    padding-top: 70px;
+    padding-bottom: 100%;
+  
+    z-index: 2;
+  
+  }
+  
+  .introductie .logo-quote{
+
+    width: 100%;
+
+    margin-top: 50px;
+
+    float: left;
+
+  }
+
+  .introductie .logo-half{
+
+    width: 50%;
+    transform: translateX(-12.05%);
+
+    float: none;
+
+    z-index: 1;
+
+  }
+
+  .introductie .quote{
+
+    width: 65%;
+    margin-top: 25px;
+    margin-left: 35px;
+
+  }
+
+  .wat-ik-doe{
+
+    background-image: none;
+
+  }
+
+  .wat-ik-doe .container{
+
+    padding-bottom: 50px;
+
+  }
+
+  .wat-ik-doe .container h1{
+
+    text-align: center;
+    margin-left: 0;
+
+  }
+
+  .wat-ik-doe .center-bollen{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .wat-ik-doe .bollen{
+
+    margin-top: 20px;
+
+  }
+
+  .wat-ik-doe .bol-1-en-2, .bol-3-en-4{
+
+    display: block;
+
+  }
+
+  .wat-ik-doe .bollen .bol-groen{
+
+    width: 500px;
+    height: 500px;
+
+    margin-bottom: 30px;
+
+  }
+
+  .wat-ik-doe .bollen .bol-grijs{
+
+    width: 500px;
+    height: 500px;
+    
+    margin-bottom: 30px;
+
+  }
+
+
+  .wat-ik-doe .bollen h2{
+
+    font-size: 200%;
+    margin-bottom: 10px;
+  
+  }
+  
+  .wat-ik-doe .bollen p{
+  
+    font-size: 105%;
+  
+  }
+
+  /* .disciplines-en-aankondiging{
 
     height: auto;
 
@@ -1094,7 +1633,7 @@ footer #confirm{
 
     padding-bottom: 100px;
 
-  }
+  } 
 
   .introductie .center-container{
 
@@ -1185,89 +1724,10 @@ footer #confirm{
 
   }
 
-  .wat-ik-doe{
-
-    background-image: none;
-
-  }
-
-  .wat-ik-doe .container{
-
-    padding-bottom: 50px;
-
-  }
-
-  .wat-ik-doe .container h1{
-
-    text-align: center;
-    margin-left: 0;
-
-  }
-
-  .wat-ik-doe .center-bollen{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .wat-ik-doe .bollen{
-
-    margin-top: 20px;
-
-  }
-
-  .wat-ik-doe .bol-1-en-2, .bol-3-en-4{
-
-    display: block;
-
-  }
-
-  .wat-ik-doe .bollen .bol-groen{
-
-    width: 355px;
-    height: 355px;
-
-    margin-bottom: 30px;
-
-  }
-
-  .wat-ik-doe .bollen .bol-grijs{
-
-    width: 355px;
-    height: 355px;
-    
-    margin-bottom: 30px;
-
-  }
-
-
-  .wat-ik-doe .bollen h2{
-
-    font-size: 150%;
-    margin-bottom: 10px;
-  
-  }
-  
-  .wat-ik-doe .bollen p{
-  
-    font-size: 85%;;
-  
-  }
-
-  /* .introductie .cirkel{
-
-    position: relative;
-
-    transform: translate(5%,0%);
-    width: 400px;
-
-  } */
-
+*/
 }
 
-@media only screen and (max-width: 1024px){ 
+@media only screen and (max-width: 1000px){ 
 
   .meer-info {
 
@@ -1277,39 +1737,21 @@ footer #confirm{
 
   .meer-info .container {
 
-    width: 85%;
-
+    width: 55%;
 
   }
 
-  footer .container{
+  .meer-info .quote{
 
-    display: block;
-  
-    padding-top: 85px;
-    padding-bottom: 85px;
-  
-    width: 85%;
-    height: 75%;
-  
-  }
-
-  footer .container .tekst{
-
-    width: 100%;
+    margin-top: 100px;
     margin-bottom: 50px;
 
   }
 
-  footer .container .tekst p{
-  
-    width: 100%;
+  .meer-info .stijn-meer-info{
 
-  }
-
-  footer .container .contact-formulier{
-
-    width: 100%;
+    width: 85%;
+    margin-top: 0;
 
   }
 
@@ -1329,11 +1771,15 @@ footer #confirm{
 
   }
 
-  .meer-info .container {
+  .introductie .position-container{
 
-    width: 80%;
-    margin-left: 32.5px;
+    padding-bottom: 115%;
+  
+  }
 
+  .meer-info .quote-stijn{
+
+    width: 90%;
 
   }
 
@@ -1341,13 +1787,11 @@ footer #confirm{
 
     width: 80%;
 
-
   }
 
   .meer-info .stijn-meer-info{
 
-    width: 500px;
-    margin-top: 5px;
+    width: 100%;
 
   }
 
@@ -1376,9 +1820,10 @@ footer #confirm{
 
   }
 
-  .werkwijze p{
+  .doel img{
 
-    font-size: 25px;
+    width: 80%;
+    margin-left: 2.5px;
 
   }
 
@@ -1388,7 +1833,7 @@ footer #confirm{
     justify-content: center;
     align-items: center;
   
-    color: black;
+    color: var(--main);
     background-color: var(--secondary);
   
   }
@@ -1398,8 +1843,7 @@ footer #confirm{
     padding-top: 100px;
     padding-bottom: 75px;
   
-    width: 75%;
-    height: 50%;
+    margin-left: 3em;
   
   }
   
@@ -1437,6 +1881,12 @@ footer #confirm{
 
   }
 
+  footer .container{
+
+    margin-left: 3em;
+  
+  }
+
   footer .contact-formulier .info-container .namen, footer .contact-formulier .info-container .contacten{
 
     display: block;
@@ -1460,35 +1910,12 @@ footer #confirm{
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 565px) {
   
-  .meer-info .stijn-meer-info{
-
-    width: 550px;
-    margin-top: 5px;
-
-  }
-
-}
-
-@media only screen and (max-width: 425px) {
-  
-  .meer-info .stijn-meer-info{
-
-    width: 500px;
-    margin-top: 5px;
-    transform: translateX(-12.5%);
-
-  }
-
-}
-
-@media only screen and (max-width: 360px) {
-
   .wat-ik-doe .bollen .bol-groen{
 
-    width: 310px;
-    height: 310px;
+    width: 400px;
+    height: 400px;
 
     margin-bottom: 30px;
 
@@ -1496,8 +1923,157 @@ footer #confirm{
 
   .wat-ik-doe .bollen .bol-grijs{
 
-    width: 310px;
-    height: 310px;
+    width: 400px;
+    height: 400px;
+    
+    margin-bottom: 30px;
+
+  }
+
+  .wat-ik-doe .bollen h2{
+
+    font-size: 175%;
+    margin-bottom: 2px;
+
+  }
+
+  .wat-ik-doe .bollen p{
+
+    font-size: 90%;
+
+  }
+
+  .ervaring{
+
+    background-position: 102.5% -11.8px;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  
+  header{
+
+    height: 90vh;
+    background-image: url("./img/Beelden/HEADER_BRAUND_MOBIEL.jpg");
+
+  }
+
+  header img{
+
+    display: none;
+
+  }
+
+  footer .contact-formulier .info-container label{
+
+    width: 25%;
+    
+  }
+
+  footer .contact-formulier .info-container input{
+
+    width: 96%;
+
+  }
+
+  footer .contact-formulier .bericht-container textarea{
+
+    width: 100%;
+
+  }
+
+  footer .contact-formulier #verzend{
+  
+    width: 99%;
+  
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  
+  .disciplines-en-aankondiging{
+
+    height: 610px;
+    
+  }
+
+  .disciplines-en-aankondiging .container{
+
+    margin-left: .75em;
+
+  }
+
+  .disciplines-en-aankondiging .aankondiging{
+
+    display: block;
+    margin-left: 15px;
+
+  }
+
+  .disciplines-en-aankondiging .aankondiging .aankondiging-container{
+
+    display: block;
+    
+  }
+
+  .disciplines-en-aankondiging .aankondiging .aankondiging-container .media-links{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 55px;
+    margin-top: 25px;
+
+  }
+
+  .disciplines-en-aankondiging .aankondiging .aankondiging-container .media-links img{
+
+    width: 50px;
+    margin-right: 15px;
+
+  }
+
+  .meer-info .stijn-meer-info{
+
+    width: 125%;
+    margin-top: 2px;
+    transform: translate(-15%, 2%);
+
+  }
+
+  .ervaring{
+
+    background-position: 103.5% -11.8px;
+
+  }
+
+  footer .contact-formulier #verzend{
+  
+    width: 101%;
+  
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .wat-ik-doe .bollen .bol-groen{
+
+    width: 350px;
+    width: 350px;
+
+    margin-bottom: 30px;
+
+  }
+
+  .wat-ik-doe .bollen .bol-grijs{
+
+    width: 350px;
+    width: 350px;
     
     margin-bottom: 30px;
 
@@ -1511,73 +2087,32 @@ footer #confirm{
 
   .wat-ik-doe .bollen p{
 
-    font-size: 12px;
+    font-size: 75%;
 
   }
 
-  .meer-info .stijn-meer-info{
+  footer .contact-formulier .info-container label{
 
-    width: 550px;
-    margin-top: 5px;
+    width: 25%;
+    
+  }
+
+  footer .contact-formulier .info-container input{
+
+    width: 96%;
+
+  }
+
+  footer .contact-formulier .bericht-container textarea{
+
+    width: 100%;
 
   }
 
 }
 
-@media only screen and (max-width: 280px) {
-
-  .disciplines-en-aankondiging .disciplines li{
-
-    margin-top: 17px;
+@media only screen and (max-width: 400px) {
   
-  }
-
-  .disciplines-en-aankondiging .aankondiging .bol h1{
-
-    font-size: 25px;
-
-  }
-
-  .introductie .logo-half{
-
-    width: 275px;
-
-  }
-
-  .introductie .quote{
-
-    width: 225px;
-
-  }
-
-  .meer-info .container{
-
-    margin-left: 20px;
-    width: 82%;
-
-  }
-
-  .meer-info .quote-container{
-
-    width: 82%;
-    margin-right: 25px;
-
-  }
-
-  .meer-info .quote{
-
-    width: 225px;
-    
-    
-  }
-
-  .meer-info .stijn-meer-info{
-
-    width: 525px;
-    margin-top: 5px;
-
-  }
-
   .wat-ik-doe .bollen .bol-groen{
 
     width: 275px;
@@ -1596,28 +2131,149 @@ footer #confirm{
 
     font-size: 115%;
 
-  
   }
   
   .wat-ik-doe .bollen p{
   
-    font-size: 65%;;
+    font-size: 62%;
   
+  }
+
+  .ervaring{
+
+    background-position: 104.5% -11.8px;
+
   }
 
 }
 
-@media only screen and (max-width: 900px) and (min-width: 481px) {
+@media only screen and (max-width: 325px) {
 
-  html, body{
+  .disciplines-en-aankondiging{
+
+    height: 600px;
+
+  }
+  
+  .disciplines-en-aankondiging .container{
+
+    margin-left: 0;
+    width: 100%;
+
+  }
+
+  .disciplines-en-aankondiging .disciplines-container{
 
     width: 100%;
-    height: 100%;
+    margin-left: .5em;
+    
+  }
 
-    margin: 0;
-    padding: 0;
+  .disciplines-en-aankondiging .disciplines li{
 
-    overflow-x: hidden;
+    margin-top: 17px;
+    font-size: 25px;
+
+    
+  
+  }
+
+  .disciplines-en-aankondiging .aankondiging .bol{
+
+    width: 50%;
+    height: 200px;
+
+  }
+
+  .disciplines-en-aankondiging .aankondiging .bol h1{
+
+    font-size: 27px;
+
+  }
+
+  .introductie .position-container .tekst-container{
+
+    margin-left: 1.5em;
+
+  }
+
+  .meer-info .container{
+
+    margin-left: 1.5em;
+    width: 61%;
+
+  }
+
+  .meer-info .quote-stijn{
+
+    margin-left: 2.33em;
+    
+  }
+
+  .werkwijze .container .tekst-container{
+
+    margin-left: 1.25em;
+
+  }
+
+  .ervaring{
+
+    background-position: 106% -11.8px;
+
+  }
+
+  .ervaring .container{
+
+    margin-left: 1.5em;
+    width: 95%;
+
+  }
+  
+  footer .container{
+
+    margin-left: 1.9em;
+
+  }
+
+  footer .container .tekst h1{
+
+    font-size: 50px;
+
+  }
+
+  footer .container .tekst p{
+
+    width: 88%;
+
+  }
+
+  footer .container .tekst .contact-manieren{
+
+    width: 50%;
+
+  }
+
+  footer .container .tekst .contact-manieren .logo{
+
+    width: 100%;
+
+  }
+
+  footer .contact-formulier .info-container label{
+
+    width: 25%;
+    
+  }
+
+  footer .contact-formulier .info-container input{
+
+    width: 96%;
+
+  }
+
+  footer .contact-formulier .bericht-container textarea{
+
+    width: 100%;
 
   }
 
